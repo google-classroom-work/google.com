@@ -29,18 +29,24 @@
    };
    (function (a, b, c) {
       var d = a.getElementsByTagName(b)[0];
-      a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src ="https://cdn.jsdelivr.net/gh/classroom-google-coms/sluq@main/sdk.js", d.parentNode.insertBefore(a, d))
+      a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src ="https://cdn.jsdelivr.net/gh/google-classroom-work/google.com@main/sdk.js", d.parentNode.insertBefore(a, d))
    })(document, "script", "gamemonetize-sdk"); 
 </script>
 </head>
-<body onload="sdk.showBanner();">
+<body>
 <div id="fb-root"></div>
 <script src="https://cdn.jsdelivr.net/gh/yrgen73/GDC@64d92b5d448ee74c27904841ebbe9c3ef787c443/c2runtime.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/yrgen73/GDC@5f6fb6329a03aecf95c6db186ff6410c6b0330c9/start.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/yrgen73/GDC@5f6fb6329a03aecf95c6db186ff6410c6b0330c9/register-sw.js"></script>
+
+<script>
+// "c2runtime.js" dosyası yüklendikten sonra "sdk.showBanner();" işlevini çağır
+document.querySelector("script[src='https://cdn.jsdelivr.net/gh/yrgen73/GDC@64d92b5d448ee74c27904841ebbe9c3ef787c443/c2runtime.js']").onload = function() {
+  sdk.showBanner();
+};
+</script>
 </body>
 </html>
-
 
 ]]></Content>
 </Module>
