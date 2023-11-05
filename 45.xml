@@ -43,12 +43,6 @@
 <script src="https://cdn.jsdelivr.net/gh/yrgen73/GDC@64d92b5d448ee74c27904841ebbe9c3ef787c443/c2runtime.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/yrgen73/GDC@5f6fb6329a03aecf95c6db186ff6410c6b0330c9/start.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/yrgen73/GDC@5f6fb6329a03aecf95c6db186ff6410c6b0330c9/register-sw.js"></script>
-<script>
-// Tüm oyunun yüklenmesini bekleyin ve sonra "sdk.showBanner();" işlevini çağırın
-window.addEventListener('load', function() {
-  sdk.showBanner();
-});
-</script>
 </body>
 </html>
 
