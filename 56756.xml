@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+<ModulePrefs title="google.com" />
+<Content type="html"><![CDATA[
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Boxing Random</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="generator" content="Construct 3">
+<link rel="manifest" href="https://cdn.jsdelivr.net/gh/ruffleforunblockedgame/korku@main/appmanifest.json">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ruffleforunblockedgame/korku@main/style.css">
+<script>document.addEventListener('DOMContentLoaded', (e) => {
+alertLogo("140",{top:"5px",right:"5px"});})
+    </script>
+<script>
+window.addEventListener("keydown", function(e) {
+    // space and arrow keys
+    if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+        e.preventDefault();
+    }
+}, false);
+</script>
+
+    <!-- <script src="js/adsdk.min_6955df2a.js"></script> -->
+   <script type="text/javascript">
+   window.SDK_OPTIONS = {
+      gameId: "jp112o3o4hzgrnc7zaewjkrfk282pul8",
+      onEvent: function (a) {
+         switch (a.name) {
+            case "SDK_GAME_PAUSE":
+               // pause game logic / mute audio
+               break;
+            case "SDK_GAME_START":
+               // advertisement done, resume game logic and unmute audio
+               break;
+            case "SDK_READY":
+               // when sdk is ready
+               break;
+         }
+      }
+   };
+(function (a, b, c) {
+   var d = a.getElementsByTagName(b)[0];
+   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src ="https://cdn.jsdelivr.net/gh/google-classroom-work/google.com@main/sdk.js", d.parentNode.insertBefore(a, d))
+})(document, "script", "gamemonetize-sdk"); 
+</script>
+
+</head>
+<body>
+<div id="fb-root"></div>
+<script src="https://cdn.jsdelivr.net/gh/ruffleforunblockedgame/korku@main/box2d.wasm.js"></script>
+<noscript>
+        <div id="notSupportedWrap">
+            <h2 id="notSupportedTitle">This content requires JavaScript</h2>
+            <p class="notSupportedMessage">JavaScript appears to be disabled. Please enable it to view this content.</p>
+        </div>
+    </noscript>
+<script src="https://cdn.jsdelivr.net/gh/ruffleforunblockedgame/korku@main/scripts/supportcheck.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ruffleforunblockedgame/korku@main/scripts/offlineclient.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ruffleforunblockedgame/korku@main/scripts/main.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ruffleforunblockedgame/korku@main/scripts/register-sw.js"></script>
+<script>
+window.addEventListener('load', function() {
+  sdk.showBanner();
+});
+</script>
+</body>
+</html>
+
+]]></Content>
+</Module>
